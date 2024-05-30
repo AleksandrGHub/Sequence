@@ -1,4 +1,6 @@
-﻿namespace Sequence
+﻿using System.Numerics;
+
+namespace Sequence
 {
     class Program
     {
@@ -6,8 +8,9 @@
         {
             int maxNumber = 103;
             int summandNumber = 7;
+            int minNumber = 5;
 
-            for (int minNumber = 5; minNumber <= maxNumber; minNumber += summandNumber)
+            for (int i = minNumber; minNumber <= maxNumber; minNumber += summandNumber)
             {
                 Console.WriteLine(minNumber);
             }
